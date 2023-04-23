@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .site {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4CB5F9;
+        }
+
+        .wrapper{
+            width: 400px;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+
+        .title{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-bottom: 1px solid grey;
+        }
+
+        h1{
+            margin: 15px;
+
+        }
+
+        h2{
+            font-weight: 400;
+            color: grey;
+        }
+
+        .userData{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form{
+            margin: 20px 0;
+        }
+
+        .field{
+            width: 87%;
+            margin: 10px;
+            padding: 5px 10px;
+            border: 1px solid grey;
+            font-weight: 700;
+            border-radius: 5px;
+
+        }
+
+        button{
+            padding: 5px 15px;
+            margin-right: 15px;
+            border: 1px solid orange;
+            font-weight: 700;
+            border-radius: 5px;
+            background: rgb(71,66,66);
+            background: linear-gradient(357deg, rgba(71,66,66,0.05654761904761907) 0%, rgba(101,101,108,0.34226190476190477) 35%, rgba(255,255,255,0) 100%);
+        }
+
+        .btn{
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+        }
+    </style>
+</head>
+<body>
+
+<form class="site">
+
+    <div class="wrapper">
+        <div class="title">
+            <h1>New to Twitter?</h1>
+            <h2>Sign up</h2>
+        </div>
+
+        <div class="form">
+            <div class="userData">
+                <input type="text" name="userName" class="field" placeholder="Full name" required>
+                <input type="email" name="email" class="field" placeholder="Email" required>
+                <input type="password" name="password" class="field" placeholder="Passwpord" required>
+            </div>
+
+            <div class="btn">
+                <button>Sign up for Twitter</button>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+
+</body>
+</html>

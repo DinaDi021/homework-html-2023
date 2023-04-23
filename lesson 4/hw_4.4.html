@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<form class="site">
+
+  <div class="container">
+    <div class="title">
+      <h1>Заповніть поля анкети</h1>
+    </div>
+
+    <div class="form">
+      <div class="userData">
+        <label>Ваше ім'я:<input type="text" name="userName" class="field" placeholder="Diana" required></label>
+        <label>Ваше прізвище:<input type="text" name="userLastName" class="field" placeholder="Ilina" required></label>
+      </div>
+      <div class="survey">
+
+        <label class="radio">
+          <p>Ваша стать:<br><br></p>
+          <input type="radio" name="gender" value="male" class="gender">Чоловік
+          <input type="radio" name="gender" value="female" class="gender">Жінка
+        </label>
+        <label class="checkbox">
+          <p>Послугами якої сотової компанії ви користуєтесь:</p>
+          <input type="checkbox" name="checkbox" class="connection">KiyvStar
+          <input type="checkbox" name="checkbox" class="connection">MTS
+          <input type="checkbox" name="checkbox" class="connection">Life:)
+          <input type="checkbox" name="checkbox" class="connection">PeopleNet
+          <input type="checkbox" name="checkbox" class="connection">Utel
+        </label>
+
+      </div>
+      <div class="button">
+        <input type="submit" value="Надіслати анкету" class="submit">
+        <input type="reset" value="Очистити бланк" class="reset">
+      </div>
+    </div>
+
+  </div>
+
+</form>
+
+</body>
+</html>
