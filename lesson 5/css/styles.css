@@ -1,4 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: url("../img/temnie-tona.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+ul{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+/*hw_5.1*/
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px;
+}
+
+div.wrapper > div {
+    width: 15%;
+    height: 78%;
+    border:5px solid white;
+    border-radius: 15px;
+}
+
+div.wrapper > div > h1{
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    color: aliceblue;
+    border-bottom: 1px solid white;
+}
+
+div > ul > li{
+    color: azure;
+}
 
 div.list_one > ul > li:nth-child(even) {
     color: deeppink;
@@ -10,6 +51,9 @@ div.list_two > ul > li:nth-child(odd) {
 
 div.list_three > ul > li:nth-child(2n + 4)::after{
     content: '!';
+    font-weight: 700;
+    margin-left: 5px;
+    color: red;
 }
 
 div.list_four > ul > li:last-child {
@@ -19,4 +63,70 @@ div.list_four > ul > li:last-child {
 div.list_five > ul > li::first-letter{
     font-size: 30px;
     color: red;
+}
+
+/*hw_5.2*/
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 4px solid #554C4C;
+    border-radius: 50%;
+    z-index: 1;
+    top: 18%;
+
+}
+
+#logo1 {
+    right: 80.5%;
+}
+
+#logo2{
+    right: 46.5%;
+}
+
+#logo3{
+    right: 13.5%;
+}
+
+.text{
+    position: relative;
+    width: 321px;
+    height: 491px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(217, 217, 217, 0.3);
+    border: 4px solid #554C4C;
+}
+
+div.text > h2{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+div.text > p{
+    width: 80%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.active_link{
+    border: 4px solid #65856E;
 }
